@@ -7,7 +7,7 @@ Included:
 * @mixin animation ($animation_name, $duration: 1s, $delay: 0, $iterations: 1, $timing: linear)
 ```sass
 .floating
-  +animation(floating, 0, 12s)
+  +animation(floating, 12s)
 ```
 * @mixin keyframes ($animation_name)
 ```sass
