@@ -4,12 +4,12 @@ Here's some CSS3 Mixins I use in a lot of projects.
 
 Included:
 
-* @mixin animation ($animation_name, $duration: 1s, $delay: 0, $iterations: 1, $timing: linear)
+* `@mixin animation ($animation_name, $duration: 1s, $delay: 0, $iterations: 1, $timing: linear)`
 ```sass
 .floating
   +animation(floating, 12s)
 ```
-* @mixin keyframes ($animation_name)
+* `@mixin keyframes ($animation_name)`
 ```sass
 +keyframes(floating)
   from
@@ -19,12 +19,12 @@ Included:
   to
     +transform(translate(0, 0) rotate(-50deg) scale(0.95))
 ```
-* @mixin transform($params)
+* `@mixin transform($params)`
 ```sass
 #some-element
   +transform(translate(0, 0) rotate(-50deg) scale(0.95))
 ```
-* @mixin transition($params)
+* `@mixin transition($params)`
 ```sass
 #some-element
   +transition(width 2s)
