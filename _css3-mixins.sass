@@ -1,0 +1,39 @@
+@mixin animation ($animation_name, $duration: 1s, $delay: 0, $iterations: 1, $timing: linear)
+  -webkit-animation-delay: $delay
+  -webkit-animation-duration: $duration
+  -webkit-animation-name: $animation_name
+  -webkit-animation-iteration-count: $iterations
+  -webkit-animation-timing-function: $timing
+
+  -moz-animation-delay: $delay
+  -moz-animation-duration: $duration
+  -moz-animation-name: $animation_name
+  -moz-animation-iteration-count: $iterations
+  -moz-animation-timing-function: $timing
+
+  animation-delay: $delay
+  animation-duration: $duration
+  animation-name: $animation_name
+  animation-iteration-count: $iterations
+  animation-timing-function: $timing
+
+@mixin keyframes ($animation_name)
+  @-webkit-keyframes #{$animation_name}
+    @content
+
+  @-moz-keyframes #{$animation_name}
+    @content
+
+  @keyframes #{$animation_name}
+    @content
+
+@mixin transform($params)
+  -webkit-transform: $params
+  -ms-transform: $params
+  transform: $params
+
+@mixin transition($params)
+  -webkit-transition: $params
+  -moz-transition: $params
+  -o-transition: $params
+  transition: $params
